@@ -12,8 +12,7 @@ with open(argv[1]) as f:
             if number % i == 0:
                 factor = number//i
                 for j in range(3, factor, 2):
-                    if factor % j == 0:
+                    if factor % j == 0 or j == 0:
                         break
-                else:
                     print("{}*{}".format(factor, i))
                 break
