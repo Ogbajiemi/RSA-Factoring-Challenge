@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from sys import argv
 
-with open(argv[1] as f:
+with open(argv[1]) as f:
     for line in f:
         number = int(line)
         print("{:d}=".format(number), end='')
@@ -9,7 +9,7 @@ with open(argv[1] as f:
             print("{}*2".format(number//2))
             continue
         for i in range(3, number, 2):
-        if number % i == 0:
+            if number % i == 0:
                 factor = number//i
                 for j in range(3, factor, 2):
                     if factor % j == 0 or j == 0:
